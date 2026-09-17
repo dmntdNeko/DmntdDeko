@@ -1,0 +1,12 @@
+# Project exclude paths
+.gradle/
+.idea/
+build/
+
+eclipse/
+run/
+
+*.jar
+*.zip
+*.pdn
+!gradle/wrapper/gradle-wrapper.jar
