@@ -1,8 +1,14 @@
 tile.dmntddeko.masonry_mixed_bricks_ADG.name=Mixed Bricks ADG
 tile.dmntddeko.masonry_mixed_bricks_ADS.name=Mixed Bricks ADS
 tile.dmntddeko.masonry_mixed_bricks_CMPRS.name=Mixed Bricks CMPRS
-tile.dmntddeko.masonry_mixed_bricks_DS.name=Mixed Bricks DS
+tile.dmntddeko.masonry_mixed_bricks_CD.name=Mixed Bricks CD
+tile.dmntddeko.masonry_mixed_bricks_CDG.name=Mixed Bricks CDG
+tile.dmntddeko.masonry_mixed_bricks_CDM.name=Mixed Bricks CDM
+tile.dmntddeko.masonry_mixed_bricks_CS.name=Mixed Bricks CS
 tile.dmntddeko.masonry_mixed_bricks_DG.name=Mixed Bricks DG
+tile.dmntddeko.masonry_mixed_bricks_DGG.name=Mixed Bricks DGG
+tile.dmntddeko.masonry_mixed_bricks_DS.name=Mixed Bricks DS
+tile.dmntddeko.masonry_mixed_bricks_PRS.name=Mixed Bricks PRS
 tile.dmntddeko.masonry_mixed_bricks_PS.name=Mixed Bricks PS
 
 itemGroup.TabDekoBlocks=DmntdDeko Blocks

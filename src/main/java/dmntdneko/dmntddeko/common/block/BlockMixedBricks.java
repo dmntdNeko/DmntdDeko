@@ -15,18 +15,22 @@ import net.minecraft.world.IBlockAccess;
 
 import java.util.List;
 
-public class BlockMasonry extends Block {
+public class BlockMixedBricks extends Block {
     public enum MasonryType {
         // A - Andesite, C - Clay Bricks, D - Diorite, G - Granite, M - Mud Bricks, P - Prismarine, R- Dark Prismarine, S - deepSlate
         // Pending: blackstone,
-        riprap("riprap", 1, 1),
-        mixed_bricks_ADG("mixed_bricks_ADG", 2, 3),
-        mixed_bricks_ADS("mixed_bricks_ADS", 2, 3),
-        mixed_bricks_CMPRS("mixed_bricks_CMPRS", 2, 3),
-        mixed_bricks_CS("mixed_bricks_CS", 2, 3),
-        mixed_bricks_DS("mixed_bricks_DS", 2, 3),
-        mixed_bricks_DG("mixed_bricks_DG", 2, 3),
-        mixed_bricks_PS("mixed_bricks_PS", 2, 3);
+        mixed_bricks_ADG("ADG", 2, 3),
+        mixed_bricks_ADS("ADS", 2, 3),
+        mixed_bricks_CD("CD", 2, 3),
+        mixed_bricks_CDG("CDG", 3, 3),
+        mixed_bricks_CDM("CDM", 3, 3),
+        mixed_bricks_CMPRS("CMPRS", 2, 3),
+        mixed_bricks_CS("CS", 2, 3),
+        mixed_bricks_DS("DS", 2, 3),
+        mixed_bricks_DG("DG", 2, 3),
+        mixed_bricks_DGG("DGG", 3, 3),
+        mixed_bricks_PS("PS", 2, 3),
+        mixed_bricks_PRS("PRS", 3, 3);
 
 
         public final String name;
@@ -45,7 +49,7 @@ public class BlockMasonry extends Block {
     @SideOnly(Side.CLIENT)
     private IIcon[][][] icons;
 
-    public BlockMasonry(Material material) {
+    public BlockMixedBricks(Material material) {
         super(material);
         this.setBlockName("dmntddeko.masonry");
         this.setHardness(2.0F);
@@ -66,9 +70,9 @@ public class BlockMasonry extends Block {
                 icons[meta][i] = new IIcon[type.counts];
 
                 for (int j = 0; j < type.counts; j++) {
-                    String textureName = "dmntddeko:masonry/masonry_" + type.name;
+                    String textureName = "dmntddeko:masonry/mixed_bricks/" + type.name + "/";
 
-                    if (type.sets > 1) textureName += "_" + i;
+                    if (type.sets > 1) textureName += i;
                     if (type.counts > 1) textureName += "_" + j;
 
                     icons[meta][i][j] = iconRegister.registerIcon(textureName);

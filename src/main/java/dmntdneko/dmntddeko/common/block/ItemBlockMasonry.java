@@ -12,8 +12,8 @@ public class ItemBlockMasonry extends ItemBlockWithMetadata {
     @Override
     public String getUnlocalizedName(ItemStack stack) {
         int meta = stack.getItemDamage();
-        if (meta < 0 || meta >= BlockMasonry.TYPES.length) meta = 0;
+        if (meta < 0 || meta >= BlockMixedBricks.TYPES.length) meta = 0;
 
-        return super.getUnlocalizedName() + "_" + BlockMasonry.TYPES[meta];
+        return super.getUnlocalizedName() + "_" + BlockMixedBricks.TYPES[meta];
     }
 }
